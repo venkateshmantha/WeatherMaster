@@ -36,6 +36,7 @@ def processRequest(req):
     min_temp = str(w.get_temperature('celsius')['temp_min'])
     current_temp = str(w.get_temperature('celsius')['temp'])
     status = w.get_status()
+    icon = w.get_weather_icon_name()
     wind_speed = str(w.get_wind()['speed'])
     humidity = str(w.get_humidity())
 
@@ -53,6 +54,7 @@ def processRequest(req):
                 "elements": [
                     {
                         "title": title,
+                        "image_url": "http://openweathermap.org/img/w/" +icon + ".png",
                         "subtitle": report
                     }
                 ]
