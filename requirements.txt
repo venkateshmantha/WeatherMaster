@@ -15,6 +15,6 @@ PySocks==1.6.7
 pytz==2017.2
 requests==2.20.0
 six==1.10.0
-urllib3==1.21.1
+urllib3==1.26.5
 virtualenv==15.1.0
 Werkzeug==0.12.2
